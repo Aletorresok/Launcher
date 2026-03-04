@@ -15,6 +15,14 @@ const APPS = [
     color: "#6366f1",
     bg: "#0f172a",
   },
+  {
+    icon: "💰",
+    nombre: "Mis Finanzas",
+    desc: "Capital, frascos y seguimiento de precios",
+    url: "https://mis-finanzas-rho.vercel.app",
+    color: "#c9a84c",
+    bg: "#1a160a",
+  },
 ];
 
 export default function App() {
@@ -36,7 +44,7 @@ export default function App() {
       </div>
 
       {/* Tiles */}
-      <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center", maxWidth: 600 }}>
+      <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center", maxWidth: 700 }}>
         {APPS.map(app => (
           <a
             key={app.nombre}

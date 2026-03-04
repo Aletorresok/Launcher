@@ -23,6 +23,14 @@ const APPS = [
     color: "#c9a84c",
     bg: "#1a160a",
   },
+  {
+    icon: "🎾",
+    nombre: "Padel Tracker",
+    desc: "Partidos, sets y errores no forzados",
+    url: "https://padel-tracker-ruby.vercel.app",
+    color: "#22c55e",
+    bg: "#0a1a0f",
+  },
 ];
 
 export default function App() {
@@ -37,14 +45,11 @@ export default function App() {
       fontFamily: "'DM Sans','Segoe UI',sans-serif",
       padding: 24,
     }}>
-      {/* Logo */}
       <div style={{ marginBottom: 48, textAlign: "center" }}>
         <div style={{ fontSize: 13, color: "#52525b", letterSpacing: 4, textTransform: "uppercase", marginBottom: 8 }}>Alexis Torresok</div>
         <div style={{ fontSize: 28, fontWeight: 800, color: "#fafafa", letterSpacing: -1 }}>Workspace</div>
       </div>
-
-      {/* Tiles */}
-      <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center", maxWidth: 700 }}>
+      <div style={{ display: "flex", gap: 16, flexWrap: "wrap", justifyContent: "center", maxWidth: 900 }}>
         {APPS.map(app => (
           <a
             key={app.nombre}
@@ -74,7 +79,6 @@ export default function App() {
           </a>
         ))}
       </div>
-
       <div style={{ marginTop: 56, fontSize: 11, color: "#3f3f46" }}>
         {new Date().getFullYear()} · Workspace personal
       </div>
